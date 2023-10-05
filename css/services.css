@@ -1,0 +1,326 @@
+:root {
+    --primary-color: #189a46;
+    --secondary-color: #f53626;
+    --font-color: #696969;
+    --para-color: #696969;
+    --bg-color: #fff;
+    --heading-color: #000c04;
+    --border-radius: 10px;
+    --border-color: #ddd;
+    --border-light: #f0f3f0;
+    --nav-color: #292922;
+    --dropdown-color: #fff;
+    --bg-light: rgba(147, 107, 232, 0.05);
+    --iframe-filter: grayscale(0%);
+    --widget-bg: #3f3a64;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #189a46;
+    --secondary: #f53626;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+        "Liberation Mono", "Courier New", monospace;
+}
+.w3l-breadcrumb {
+    margin-top: 80px;
+    background-image: url("../img/banner4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    display: grid;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.text-center {
+    text-align: center !important;
+}
+.py-sm-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.container {
+    min-width: 1200px;
+    position: relative;
+}
+
+.py-2 {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+}
+
+h2,
+h3,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.mt-2 {
+    margin-top: 0.5rem !important;
+}
+.mt-3 {
+    margin-top: 1rem !important;
+}
+.mb-3 {
+    margin-bottom: 1rem !important;
+}
+.w3l-breadcrumb h2.title {
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.w3l-breadcrumb::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #0c0c0c;
+    opacity: 0.6;
+}
+.w3l-breadcrumb .breadcrumbs-custom-path {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.w3l-breadcrumb .breadcrumbs-custom-path li {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.w3l-breadcrumb .breadcrumbs-custom-path li span.fa {
+    font-size: 12px;
+    vertical-align: 2px;
+}
+
+@media (max-width: 991px) {
+    .w3l-breadcrumb {
+        margin-top: 68px;
+    }
+}
+
+@media (max-width: 640px) {
+    .w3l-breadcrumb h2.title {
+        font-size: 34px;
+    }
+
+    .w3l-breadcrumb {
+        margin-top: 68px;
+    }
+}
+
+.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.py-lg-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.mt-0 {
+    margin-top: 0 !important;
+}
+
+.pr-lg-4 {
+    padding-right: 1.5rem !important;
+}
+
+a {
+    color: #189a46;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover {
+    color: #189a46;
+    text-decoration: none;
+}
+
+.img-fluid {
+    max-width: 100%;
+    border-radius: 10px;
+}
+.mb-lg-0 {
+    margin-bottom: 0 !important;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+.text-left {
+    text-align: left !important;
+}
+.pl-lg-5 {
+    padding-left: 3rem !important;
+}
+.sub-title {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 2em;
+    letter-spacing: 1px;
+    color: var(--secondary);
+}
+
+.sub-title span {
+    color: var(--heading-color);
+}
+
+.hny-title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    text-transform: capitalize;
+}
+
+.hny-title span {
+    font-weight: 100;
+}
+@media (max-width: 1080px) {
+    .hny-title {
+        font-size: 35px !important;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hny-title {
+        font-size: 32px !important;
+        line-height: 38px;
+    }
+}
+
+@media (max-width: 378px) {
+    .hny-title {
+        font-size: 27px !important;
+        line-height: 32px;
+    }
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.w3l-content-with-photo-4 .content-photo-grids {
+    border-bottom: 1px solid var(--border-light);
+    margin-top: 80px;
+    padding-bottom: 80px;
+    align-items: center;
+}
+
+.w3l-content-with-photo-4 .content-photo-grids:nth-child(4) {
+    border: none;
+}
+
+@media (max-width: 991px) {
+    .photo-6-inf-right.two-order {
+        order: 2;
+    }
+
+    .w3l-content-with-photo-4 .content-photo-grids {
+        margin-top: 40px;
+        padding-bottom: 40px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 668px) {
+    .w3l-content-6 .content-info-in p {
+        line-height: 25px;
+        font-size: 15px;
+    }
+
+    .w3l-content-with-photo-4 .content-photo-grids {
+        margin-top: 30px;
+        padding-bottom: 30px;
+        align-items: center;
+    }
+}
+a.read {
+    font-size: 17px;
+    padding: 0;
+    border-bottom: 2px solid var(--primary-color);
+    color: var(--heading-color);
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    border-radius: 0;
+    margin-top: 20px;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+a.read:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.photo-6-inf-right p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    line-height: 28px;
+    color: var(--font-color);
+    font-family: "Jost", sans-serif;
+}
+.primary-menu a:hover {
+    text-decoration: none;
+}
