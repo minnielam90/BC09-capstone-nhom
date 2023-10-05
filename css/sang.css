@@ -530,3 +530,7 @@ a.read:hover {
         font-size: 2em !important;
     }
 }
+.col-sm-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
