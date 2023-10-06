@@ -46,8 +46,8 @@
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
         "Liberation Mono", "Courier New", monospace;
 }
+
 .w3l-breadcrumb {
-    margin-top: 80px;
     background-image: url("../img/banner4.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -56,7 +56,7 @@
     z-index: 0;
     display: grid;
     align-items: center;
-    padding: 10px 0;
+    padding: 1em 0;
 }
 
 .text-center {
@@ -68,8 +68,11 @@
 }
 
 .container {
-    min-width: 1200px;
-    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .py-2 {
@@ -300,7 +303,7 @@ a.read {
     font-size: 17px;
     padding: 0;
     border-bottom: 2px solid var(--primary-color);
-    color: var(--heading-color);
+    color: #000c04;
     transition: 0.3s ease-in-out;
     font-weight: 600;
     border-radius: 0;
@@ -310,7 +313,7 @@ a.read {
 }
 
 a.read:hover {
-    color: var(--primary-color);
+    color: #189a46;
     text-decoration: none;
 }
 .photo-6-inf-right p {
@@ -324,3 +327,25 @@ a.read:hover {
 .primary-menu a:hover {
     text-decoration: none;
 }
+
+.dark .text-left h6 {
+    color: #f53626;
+}
+ 
+.dark .text-left h3 {
+    color: #ddd;
+}
+
+.dark .text-left a.read {
+    color: #ddd;
+}
+
+.dark .text-left a.read:hover {
+    text-decoration: none;
+    color: #189a46;
+}
+
+.dark .text-left p {
+    color: #afafaf;
+}
+
