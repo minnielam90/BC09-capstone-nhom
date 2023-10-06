@@ -26,12 +26,10 @@
     />
 
     <!-- GOOGLE FONT JOST -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+
 
     <!-- gg icons -->
     <link
@@ -56,99 +54,20 @@
     />
 
     <!-- css -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="./../css/blog.css">
+    <link rel="stylesheet" href="./../css/blog_1.css">
   </head>
 
   <body id="myBody">
     <!-- header -->
     <header id="site-header" class="main-header fixed-top">
       <div class="container">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg stroke">
           <h1>
             <a class="navbar-brand" href="#">Pooch Care</a>
           </h1>
-
-          <div class="collapse navbar-collapse" id="navbar-content">
-            <ul id="primary-menu" class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Gallery</a>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Pages
-                </a>
-                <ul class="sub-menu dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Blog Posts</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Landing Page</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-
-            <ul class="navbar-nav search-right mt-lg-0 mt-2">
-              <li class="nav-item HeaderSearch" title="Search">
-                <a href="#search" class="btn search-search">
-                  <span class="fa fa-search" aria-hidden="true"></span>
-                </a>
-                <!-- search popup -->
-                <div class="pop-overlay">
-                  <div class="search-popup">
-                    <form action="#" method="get" class="d-sm-flex">
-                      <input
-                        type="search"
-                        name="s"
-                        placeholder="Search.."
-                        required="required"
-                        autofocus=""
-                      />
-                      <button type="submit">Search</button>
-                      <a class="close" href="#url"></a>
-                    </form>
-                  </div>
-                </div>
-                <!-- search popup -->
-              </li>
-            </ul>
-          </div>
-
-          <!-- darkandlight theme -->
-          <div class="darkandlight">
-            <nav class="navigation">
-              <div class="theme-switch-wrapper">
-                <label class="theme-switch" for="checkbox">
-                  <button
-                    class="mode-container"
-                    id="switchButton"
-                    title="Click to switch theme"
-                  >
-                    <i class="gg-moon"></i>
-                    <i class="gg-sun"></i>
-                  </button>
-                </label>
-              </div>
-            </nav>
-          </div>
 
           <button
             class="navbar-toggler collapsed bg-gradient"
@@ -162,142 +81,175 @@
             <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
             <span class="navbar-toggler-icon fa icon-close fa-times"></span>
           </button>
+
+          <div class="collapse navbar-collapse" id="navbar-content">
+            <ul id="primary-menu" class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/aboutus.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/gallery.html">Gallery</a>
+              </li>
+
+              <li class="nav-item dropdown menu-item-has-children">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul class="sub-menu dropdown-menu">
+                  <li><a class="dropdown-item" href="../pages/blog_page1.html">Blog Posts</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Landing Page</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contact.html">Contact</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav search-right mt-lg-0 mt-2">
+              <li id="search-menu" class="nav-item HeaderSearch" title="Search">
+                <a href="#search" class="btn search-search" title="search" onclick="openSearch()">
+                  <span id="search-icon" class="fa fa-search" aria-hidden="true"></span>
+                </a>
+                <!-- search popup -->
+                <div id="myOverlay" class="pop-overlay">
+                  
+                  <div class="search-popup">
+                    <form action="../pages/about.html" method="get" class="d-sm-flex">
+                      <input
+                        id="inputSearch"
+                        type="text"
+                        name="s"
+                        placeholder="Search.."
+                        required="required"
+                        autofocus=""
+                      />
+                      <button type="submit">Search</button>
+                      <span class="header__closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+                    </form>
+                  </div>
+                </div>
+                <!-- search popup -->
+              </li>
+            </ul>
+          </div>
+
+          <!-- darkandlight theme -->
+          <div class="mobile-position darkandlight">
+            <nav class="navigation">
+              <div class="theme-switch-wrapper">
+                <div class="theme-switch">
+                  <button
+                    class="mode-container"
+                    id="switchButton"
+                    title="Click to switch theme"
+                  >
+                    <i class="gg-sun"></i>
+                    <i class="gg-moon"></i>
+                  </button>
+                </label>
+              </div>
+            </nav>
+          </div>
+
+          
         </nav>
       </div>
     </header>
     <div class="header-fixed-space-height"></div>
 
-    <!-- banner -->
-    <section class="banner-slider">
-      <div class="banner-content">
-        <div class="owl-carousel owl-theme owl-loaded owl-drag">
-          <div class="owl-stage-outer">
-            <div class="owl-stage" style="transition: all 1s ease 0s">
-              <div class="owl-item">
-                <div class="item">
-                  <li>
-                    <div class="slider-info banner-view banner-top1">
-                      <div class="banner-info">
-                        <div class="container">
-                          <div class="banner-info-bg text-left">
-                            <h5>Quality Things for Loving Pets</h5>
-                            <p>Keeps your Pet Smiling</p>
-                            <a
-                              class="btn btn-style btn-white mt-sm-5 mt-4 mr-2"
-                              href="#"
-                              >Read More</a
-                            >
-                            <a
-                              class="btn btn-style border-btn mt-sm-5 mt-4"
-                              href="#"
-                              >Contact Us</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
+    <!-- blog -->
+    <section class="Blog">
+        <div class="bg_z">
+            <div class="container">
+                <div class="Blog_content">
+                    <h2>Blog single post</h2>
+                    <p>Home</p>
                 </div>
-              </div>
-              <div class="owl-item">
-                <div class="item">
-                  <li>
-                    <div class="slider-info banner-view banner-top2">
-                      <div class="banner-info">
-                        <div class="container">
-                          <div class="banner-info-bg ml-lg-auto">
-                            <h5>Quality Things for Loving Pets</h5>
-                            <p>Keeps your Pet Smiling</p>
-                            <a
-                              class="btn btn-style btn-white mt-sm-5 mt-4 mr-2"
-                              href="#"
-                              >Read More
-                            </a>
-                            <a
-                              class="btn btn-style border-btn mt-sm-5 mt-4"
-                              href="#"
-                              >Contact Us
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </div>
-              </div>
-              <div class="owl-item">
-                <div class="item">
-                  <li>
-                    <div class="slider-info banner-view banner-top3">
-                      <div class="banner-info">
-                        <div class="container">
-                          <div class="banner-info-bg text-left">
-                            <h5>Quality Things for Loving Pets</h5>
-                            <p>Keeps your Pet Smiling</p>
-                            <a
-                              class="btn btn-style btn-white mt-sm-5 mt-4 mr-2"
-                              href="#"
-                              >Read More</a
-                            >
-                            <a
-                              class="btn btn-style border-btn mt-sm-5 mt-4"
-                              href="#"
-                              >Contact Us</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </div>
-              </div>
-              <div class="owl-item">
-                <div class="item">
-                  <li>
-                    <div class="slider-info banner-view banner-top4">
-                      <div class="banner-info">
-                        <div class="container">
-                          <div class="banner-info-bg text-left">
-                            <h5>Quality Things for Loving Pets</h5>
-                            <p>Keeps your Pet Smiling</p>
-                            <a
-                              class="btn btn-style btn-white mt-sm-5 mt-4 mr-2"
-                              href="#"
-                              >Read More</a
-                            >
-                            <a
-                              class="btn btn-style border-btn mt-sm-5 mt-4"
-                              href="#"
-                              >Contact Us</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </div>
-              </div>
+        
             </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    <!-- aboutus -->
-
-    <!-- features -->
-
-    <!-- services -->
-
-    <!-- number -->
-
-    <!-- pricing plans -->
-
-    <!-- video popup section -->
-
-    <!-- testimonials -->
-
-    <!-- subcribe -->
+    <!-- post -->
+    <section class="Pet">
+        <div class="container">
+            <div class="Pet_content">
+                <div class="Pet_top">
+                    <a href="">Pets</a>
+                    <h2>Delivering Happiness For Pets</h2>
+                    <div class="date">
+                        <i class="fa-regular fa-clock fa-flip-horizontal"></i> December 30, 2020
+                        <i class="fa-solid fa-user"></i> by <span>W3Layouts</span>
+                    </div>
+                </div>
+                <div class="Pet_center">
+                    <img src="./../img/g8.jpg" alt="">
+                </div>
+                <div class="Pet_bot">
+                    <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit</p>
+                    <div class="Prev_Next">
+                        <div class="Prev">
+                            <a href="./blog_7.html">
+                                <p>
+                                    <i class="fa-solid fa-angles-left"></i> Prev Post
+                                </p>
+                                <h3>Delivering happiness for Pets</h3>
+                            </a>
+                        </div>
+                        <div class="Next">
+                            <a href="./blog_9.html">
+                                <p>
+                                    Next Post <i class="fa-solid fa-angles-left fa-rotate-180"></i>
+                                </p>
+                                <h3>Delivering happiness for Pets</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="Reply">
+                        <h2>Leave a Reply</h2>
+                        <p>Your email address will not be published. Required fields are marked *</p>
+                        <div class="mb-3">
+                          <label for="" class="form-label">Comment *</label>
+                          <input type="text" name="" id="" class="form-control Comment" placeholder="" aria-describedby="helpId">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Name *</label>
+                            <input type="text" name="" id="" class="form-control demo" placeholder="" aria-describedby="helpId">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Email *</label>
+                            <input type="text" name="" id="" class="form-control demo" placeholder="" aria-describedby="helpId">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Website</label>
+                            <input type="text" name="" id="" class="form-control demo" placeholder="" aria-describedby="helpId">
+                        </div>
+                    </div>
+                    <div class="bot_bot">
+                        <h3>Save my name, email, and website in this browser for the next time I comment.</h3>
+                        <div class="bot_r">
+                            <button class="Post_comment">Post Comment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- footer -->
     <section class="poochfooter">
@@ -431,7 +383,12 @@
           </div>
         </div>
       </footer>
+      <!-- back to top -->
+      <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fa fa-angle-up"></span>
+      </button>
     </section>
+
 
     <!-- Bootstrap JavaScript Libraries -->
     <script
@@ -445,6 +402,57 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- menu js -->
+    <script>
+      $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 80) {
+          $("#site-header").addClass("nav-fixed");
+        } else {
+          $("#site-header").removeClass("nav-fixed");
+        }
+      });
+
+      //Main navigation Active Class Add Remove
+      $(".navbar-toggler").on("click", function () {
+        $("header").toggleClass("active");
+      });
+      $(document).on("ready", function () {
+        if ($(window).width() > 991) {
+          $("header").removeClass("active");
+        }
+        $(window).on("resize", function () {
+          if ($(window).width() > 991) {
+            $("header").removeClass("active");
+          }
+        });
+      });
+    </script>
+
+    <!-- disable body scroll when navbar is active -->
+        <script>
+          $(function () {
+            $('.navbar-toggler').click(function () {
+              $('body').toggleClass('noscroll');
+            })
+          });
+        </script>
+
+    <!-- search pop up -->
+          <script>
+            function openSearch() {
+                document.getElementById("myOverlay").style.display = "block";
+            }
+    
+            function closeSearch() {
+                document.getElementById("myOverlay").style.display = "none";
+            }
+        </script>
+
 
     <!-- DARK AND LIGHT THEME -->
     <script>
@@ -500,13 +508,60 @@
       });
     </script>
 
-    <!-- navbar toggler -->
+    <!-- back to top -->
     <script>
-      $(function () {
-        $(".navbar-toggler").click(function () {
-          $("body").toggleClass("noscroll");
-        });
-      });
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction()
+      };
+    
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("movetop").style.display = "block";
+        } else {
+          document.getElementById("movetop").style.display = "none";
+        }
+      }
+    
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
     </script>
+
+    <!-- popup -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+  <script>
+$('.video_center_play').magnificPopup({
+  type: 'iframe',
+  
+  
+  iframe: {
+     markup: '<div class="mfp-iframe-scaler">'+
+                '<div class="mfp-close"></div>'+
+                '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+                '<div class="mfp-title">Some caption</div>'+
+              '</div>'
+  },
+  callbacks: {
+    markupParse: function(template, values, item) {
+     values.title = item.el.attr('title');
+    }
+  }
+  
+  
+});
+  </script>
+
+    <!-- Number counter -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="../js/jquery.countup.js"></script>
+    <script>
+        $(".counter").countUp();
+    </script>
+
+
   </body>
 </html>
