@@ -156,6 +156,13 @@ h6 {
     }
 }
 
+.w3l-content-with-photo-4 .content-photo-grids {
+    border-bottom: 1px solid #f0f3f0;
+    margin-top: 80px;
+    padding-bottom: 80px;
+    align-items: center;
+}
+
 .py-5 {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
@@ -349,3 +356,12 @@ a.read:hover {
     color: #afafaf;
 }
 
+.dark .w3l-content-with-photo-4 .content-photo-grids {
+    border-bottom: 1px solid #444;
+    margin-top: 80px;
+    padding-bottom: 80px;
+    align-items: center;
+}
+.dark .navbar-expand-lg .navbar-nav .nav-link.active {
+    color: #189A46;
+  }
