@@ -1,18 +1,26 @@
-.Blog{
-    background-image: url(./../img/banner4.jpg);
-    background-repeat: no-repeat ;
+.Blog {
+    margin-top: 90px;
+    background-image: url(../img/banner4.jpg);
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    z-index: 0;
+    display: grid;
     align-items: center;
+    padding: 1em 0;
     text-align: center;
-    height: 100%;
 }
-.Blog .bg_z{
+.Blog::before {
+    content: "";
+    position: absolute;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
     background-color: #0c0c0c;
-    Width: 100%;
-    height: 100%;
     opacity: 0.6;
-    box-sizing: inherit;
 }
 .Blog .bg_z .Blog_content{
     padding-bottom: 3rem;
@@ -125,13 +133,21 @@
 .dark .Post .Post_item .title a h3{
     color: white;
 }
+.dark .Post .Post_item .title h3:hover{
+    color: #189A46;
+}
 .dark .Post .Post_item p span{
     color: white;
 }
 .dark .Post .page a{
     color: white;
 }
-
+.Post .page a:hover{
+    color: #189A46;
+}
+.dark .Post .page a:hover{
+    color: #189A46;
+}
   /* responsive */
 /* >lap */
 @media screen and (min-width: 1200px){

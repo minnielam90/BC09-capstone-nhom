@@ -657,7 +657,7 @@
           <h2>Happy Clients & Feedbacks</h2>
         </div>
         <div class="testimonials_content">
-          <div class="owl-carousel owl-theme">
+          <div class="owl-carousel owl-theme" id="owl-testimonials">
             <div class="item">
               <div class="item_testimonials ">
                 <div class="text_top">
@@ -1042,6 +1042,33 @@
         });
       });
     </script>
+<script>
+  $("#owl-testimonials").owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: false,
+    responsiveClass: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplaySpeed: 1000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      480: {
+        items: 1,
+      },
+      667: {
+        items: 1,
+      },
+      1000: {
+        items: 2,
+      },
+    },
+  });
+
+</script>
 
     <!-- back to top -->
     <script>
