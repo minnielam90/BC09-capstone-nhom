@@ -162,9 +162,15 @@
 }
 /* tap */
 @media screen and (max-width: 992px){
-
+    .Post .Post_title h2{
+        font-size: 35px;
+        line-height: 40px;
+    }
 }
 /* mobile */
 @media screen and (max-width: 576px){
-
+    .Post .Post_title h2{
+        font-size: 32px;
+        line-height: 38px;
+    }
 }
