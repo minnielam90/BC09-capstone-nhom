@@ -101,6 +101,11 @@
     background-color: #116E32;
     border-color: #116E32;
   }
+  .pricing_plans .plans_content .col .content_bottom .btn-primary:focus{
+    background-color: #116E32;
+    border-color: #116E32;
+    box-shadow: 0 0 0 0.2rem rgba(15, 162, 67, 0.65);
+  }
   .pricing_plans .plans_content .col:nth-child(2) {
     transform: scale(1.03);
     z-index: 1;
@@ -236,10 +241,16 @@
     left: calc(50% - 40px);
     top: calc(50% - 40px);
   }
+  .video .img_bot img{
+    border-radius: 10px;
+  }
   /* test */
   .testimonials {
     background: rgb(147 107 232 / 5%);
     padding: 3rem 0;
+  }
+  .testimonials .container{
+    padding: 0 70px;
   }
   .testimonials .testimonials_title {
     text-align: center;
@@ -266,9 +277,11 @@
   }
   .testimonials .testimonials_content .item_testimonials {
     margin: 0;
-    padding: 40px 30px;
+    padding: 40px 35px;
     background: white;
     margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 25px 98px 0 rgba(19, 19, 19, 0.03);
   }
   .testimonials .testimonials_content .item_testimonials .text_top{
     margin: 1.5em;
@@ -453,6 +466,10 @@
     font-size: 35px;
     line-height: 40px;
   }
+  .testimonials .container{
+    padding: 0 40px;
+  }
+  
 }
 /* mobile */
 @media screen and (max-width: 576px){
@@ -480,6 +497,9 @@
   .sub .sub_title h2{
     font-size: 32px;
     line-height: 38px;
+  }
+  .testimonials .container{
+    padding: 0;
   }
 }
 
