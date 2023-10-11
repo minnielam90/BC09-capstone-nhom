@@ -64,6 +64,12 @@ ul.about-custom-path a {
     }
 }
 
+@media (max-width: 640px) {
+  .banner-aboutpage h2.title {
+    font-size: 34px;
+  }
+}
+
 /* css maincontent about page */
 .container {
   width: 100%;
