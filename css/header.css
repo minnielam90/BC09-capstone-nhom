@@ -144,11 +144,11 @@ a.dropdown-item:hover {
 .menu-item-has-children::after {
     position: absolute;
     right: 15px;
-    top: 22px;
+    top: 23px;
     display: inline-block;
     color: #999;
     content: "\f107";
-    font: normal normal normal 13px/1 FontAwesome;
+    font: normal normal normal 12px/1 FontAwesome;
 }
 
 nav ul li a,

@@ -170,6 +170,21 @@
     span {
     color: white;
   }
+
+  /* responsive pricing plans */
+  @media (max-width: 991px) {
+    .pricing_plans .plans_content {
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 1366px) {
+    .pricing_plans .plans_content {
+      width: 90%;
+    }
+  }
+
   /* video */
 .video {
     padding: 2rem 0;
@@ -300,14 +315,30 @@
     margin-top: 80px !important;
     position: inherit;
   }
+
+  .testimonials .owl-theme .owl-dots button.owl-dot {
+    padding: 1px 6px !important;
+  }
+
+  .testimonials .owl-dots .owl-dot span {
+    background: #d8d8d8;
+    margin: 5px 2px;
+  }
+
+ 
   /* sub */
   .sub {
     padding: 3rem 0;
     text-align: center;
   }
-  .sub .sub_title {
-    margin-top: 1.5rem;
+
+  .sub .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
   }
+
   .sub .sub_title h2 {
     font-size: 40px;
     font-weight: 600;
@@ -315,7 +346,6 @@
     color: #000c04;
   }
   .sub .sub_title p {
-    margin: 1rem 0;
     font-size: 1.2em;
     line-height: 28px;
     color: #696969;
@@ -323,8 +353,6 @@
   .sub .sub_ip {
     font-size: 1rem;
     line-height: 1.5;
-    padding-top: 0.5rem;
-    margin-top: 3rem;
     flex-wrap: wrap;
   }
 
@@ -338,10 +366,9 @@
     padding-left: 20px;
     padding-right: 20px;
     border: 1px solid #ccc;
-    width: 455px;
   }
 
-  .sub .sub_ip input[type="text"]:focus {
+  .sub .sub_ip input[type="email"]:focus {
     border: 1px solid #189A46;
     box-shadow: none;
   }
@@ -371,7 +398,7 @@
 
   .sub .container .sub_ip button {
     flex-basis: 27%;
-    padding: 16px 35px;
+    padding: 12px 35px;
     font-size: 18px;
     line-height: 28px;
     font-weight: 400;
@@ -380,9 +407,15 @@
     color: white;
     background-color: #189a46;
     border: none;
-    margin-left: 20px;
   }
   .sub .container .sub_ip button:hover{
+    background-color: #116E32;
+    border-color: #116E32;
+  }
+
+  .sub .container .sub_ip button:focus {
+    color: #fff;
+    box-shadow: 0 0 0 0.2rem rgba(15, 162, 67, 0.65);
     background-color: #116E32;
     border-color: #116E32;
   }
