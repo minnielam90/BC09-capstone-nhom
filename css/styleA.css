@@ -20,6 +20,7 @@
     font-weight: 600;
     line-height: 48px;
     margin-bottom: 3rem;
+    color: #000c04;
   }
   .pricing_plans .plans_content {
     width: 90%;
@@ -189,6 +190,7 @@
     font-weight: 500;
     line-height: 48px;
     margin: 0;
+    color: #000c04;
   }
   .video .video_content .content_title p:last-child {
     margin-top: 1rem;
@@ -237,6 +239,7 @@
     line-height: 48px;
     margin: 0;
     margin-bottom: 3rem;
+    color: #000c04;
   }
   .testimonials .testimonials_content .item{
     max-width: 1050px;
@@ -305,6 +308,7 @@
     font-size: 40px;
     font-weight: 600;
     line-height: 48px;
+    color: #000c04;
   }
   .sub .sub_title p {
     margin: 1rem 0;
@@ -319,9 +323,9 @@
     margin-top: 3rem;
     flex-wrap: wrap;
   }
+
   .sub .sub_ip input {
     font-size: 16px;
-    color: #666;
     border-radius: 10px;
     padding: 0px 20px;
     flex-basis: 70%;
@@ -332,6 +336,35 @@
     border: 1px solid #ccc;
     width: 455px;
   }
+
+  .sub .sub_ip input[type="text"]:focus {
+    border: 1px solid #189A46;
+    box-shadow: none;
+  }
+
+  .form_control {
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  .form_control:focus {
+    color: #495057;
+    background-color: transparent;
+    border-color: #d2b4f5;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(142, 67, 231, 0.25);
+  }
+
   .sub .container .sub_ip button {
     flex-basis: 27%;
     padding: 16px 35px;
