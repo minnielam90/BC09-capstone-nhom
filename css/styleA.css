@@ -176,17 +176,15 @@
     color: white;
   }
 
-  /* responsive pricing plans */
-  @media (max-width: 991px) {
-    .pricing_plans .plans_content {
-      width: 60%;
-      margin: 0 auto;
-    }
+  .content_detail {
+    justify-content: center !important;
   }
 
-  @media (max-width: 1366px) {
-    .pricing_plans .plans_content {
-      width: 90%;
+  /* responsive pricing plans */
+  @media (max-width: 991px) {
+    .pricing_plans .plans_content .content_detail {
+      width: 70%;
+      margin: 0 auto;
     }
   }
 
@@ -279,7 +277,6 @@
     margin: 0;
     padding: 40px 35px;
     background: white;
-    margin-right: 20px;
     border-radius: 10px;
     box-shadow: 0 25px 98px 0 rgba(19, 19, 19, 0.03);
   }

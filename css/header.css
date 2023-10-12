@@ -330,6 +330,10 @@ a.btn.search-search {
     border-right: none;
 }
 
+.search-popup form input:focus {
+    outline: none;
+}
+
 .search-popup form button {
     font-size: 17px;
     text-align: center;
