@@ -120,6 +120,7 @@
 .Post .Post_item .title span:hover{
     color: red;
     transition: .3s;
+    cursor: pointer;
 }
 .dark .Post{
     background-color: #222222;
